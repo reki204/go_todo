@@ -2,17 +2,15 @@ package main
 
 import (
 	"fmt"
-	"log"
-
-	"github.com/reki204/go_todo/config"
+	"github.com/reki204/go_todo/app/models"
 )
 
 func main() {
-	fmt.Println(config.Config.Port)
-	fmt.Println(config.Config.SQLDriver)
-	fmt.Println(config.Config.DbName)
-	fmt.Println(config.Config.LogFile)
+	// fmt.Println(config.Config.Port)
+	// fmt.Println(config.Config.SQLDriver)
+	// fmt.Println(config.Config.DbName)
+	// fmt.Println(config.Config.LogFile)
 
-	log.Println("test")
-	
+	// log.Println("test")
+	fmt.Println(models.Db)
 }
