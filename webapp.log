@@ -1,1 +1,4 @@
 2022/07/02 11:20:05 main.go:16: test
+2022/07/02 23:42:38 users.go:33: sql: converting argument $1 type: unsupported type func() uuid.UUID, a func
+2022/07/02 23:43:06 users.go:33: disk I/O error
+2022/07/02 23:44:10 users.go:33: disk I/O error: The segment is already unlocked.
