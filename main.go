@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/reki204/go_todo/app/models"
 )
 
@@ -14,11 +15,15 @@ func main() {
 	// log.Println("test")
 	fmt.Println(models.Db)
 
-	u := &models.User{}
-	u.Name = "test"
-	u.Email = "test@example.com"
-	u.Password = "testtest"
-	fmt.Println(u)
+	// u := &models.User{}
+	// u.Name = "test"
+	// u.Email = "test@example.com"
+	// u.Password = "testtest"
+	// fmt.Println(u)
 
-	u.CreateUser()
+	// u.CreateUser()
+
+	u, _ := models.GetUser(1)
+
+	fmt.Println(u)
 }
